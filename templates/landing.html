@@ -1,0 +1,48 @@
+{% load static %}
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href={% static "Regna/css/flip.css" %}>
+    <script>
+        function redir() {
+            location.replace("http://127.0.0.1:8000/main.html")
+        }
+        function red1() {
+            location.replace("http://127.0.0.1:8000/fb_signup.html")
+        }
+        function red2() {
+            location.replace("http://127.0.0.1:8000/linkedin_signup.html")
+        }
+
+    </script>
+    </head>
+<body>
+  <div class="content">
+    <h1 class="heading">Register your social media accounts.</h1>
+    <p class="description">Hover over a card to flip it.</p><a class="card" href="#!">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x401);">
+        <p> Facebook </p>
+      </div>
+      <div class="back">
+        <div>
+          <p>New on this? Add your details of Facebook account</p>
+          <button class="button" onclick="red1()">Click Here</button>
+            <p>Already with us?</p>
+          <button class="button" onclick="redir()">Click Here</button>
+
+        </div>
+      </div></a><a class="card" href="#!">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x402);">
+        <p>LinkedIn</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>New on this? Add your details of LinkedIn account</p>
+          <button class="button" onclick="red2()">Click Here</button>
+            <p>Already with us?</p>
+          <button class="button" onclick="redir()">Click Here</button>
+        </div>
+      </div></a>
+
+  </div>
+</body>
+</html>
